@@ -2,13 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона2</title>
+    <title>HTML Academy: Седона</title>
   </head>
   <body>
 	<header class="main-header">
 		<div class="logo">
 			<a href="index.html">
-				<img src="" width="" height="" alt="SEDONA">
+				<img src="img/logo.png" width="138" height="70" alt="SEDONA">
 			</a>
 		</div>
 		<nav class="main-navigation">
@@ -31,7 +31,7 @@
 	<main>
 		<div class="search-filters">
 			<form action="" method="post">
-				<div class="column-1">
+				<fieldset class="column-1">
 					<legend>Инфраструктура:</legend>
 					<label>
 						<input type="checkbox" name="pool" checked>
@@ -45,8 +45,8 @@
 						<input type="checkbox" name="wifi">
 						WI-FI
 					</label>
-				</div>
-				<div class="column-2">
+				</fieldset>
+				<fieldset class="column-2">
 					<legend>Тип жилья:</legend>
 					<label>
 						<input type="checkbox" name="hotel" checked>
@@ -60,45 +60,47 @@
 						<input type="checkbox" name="apartments" checked>
 						Апартаменты
 					</label>
-				</div>
-				<div class="column-3">
+				</fieldset>
+				<fieldset class="column-3">
 					<h2>Стоимость в сутки (Р):</h2>
 					<div class="install-price">
-						<label>
-							<input type="text" name="price-from" placeholder="От">
-						</label>
-						<label>
-							<input type="text" name="price-to" placeholder="До">
-						</label>
+						<input type="text" name="price-from" placeholder="От">
+						<input type="text" name="price-to" placeholder="До">
 					</div>
 					<button class="btn" type="submit">Показать</button>
-				</div>
+				</fieldset>
 			</form>
 		</div>
 		<div class="settings">
 			<b>Найдено: 3</b>
-			<legend>Сортировка:</legend>
-			<ul>
-				<li class="active">по цене</li>
-				<li>по типу</li>
-				<li>по рейтингу</li>
-			</ul>
+			<fieldset>
+			  <legend>Сортировка:</legend>
+			  <ul>
+			    <li class="active"><a href="#">по цене</a></li>
+			    <li><a href="#">по типу</a></li>
+			    <li><a href="#">по рейтингу</a></li>
+			  </ul>
+			</fieldset>
 			<div class="settings-sort">
-				<div class="settings-sort-increase"></div>
-				<div class="settings-sort-decrease"></div>
+				<a class="settings-sort-increase" href="#">
+				   <img src="" alt="increase">
+				</a>
+				<a class="settings-sort-decrease" href="#">
+				   <img src="" alt="decrease">
+				</a>
 			</div>
 		</div>
 		<div class="search-results">
 			<div class="search-result">
 				<div class="photo">
-					<img src="" width="" height="" alt="hotel">
+					<img src="img/hotel.jpg" width="" height="" alt="hotel">
 				</div>
 				<div class="content">
 					<h2>Amara resort spa</h2>
 					<span>Гостиница</span>
 					<span>от 3500 р.</span>
-					<a class="button" href="#">Подробнее</a>
-					<button class="button" type="submit">Забронировать</button>
+					<a class="button blue" href="#">Подробнее</a>
+					<a class="button brown" href="#">Забронировать</a>
 					<div class="rating">
 						<img src="" width="" height="" alt="rating">
 					</div>
@@ -107,14 +109,14 @@
 			</div>
 			<div class="search-result">
 				<div class="photo">
-					<img src="" width="" height="" alt="motel">
+					<img src="img/motel.jpg" width="" height="" alt="motel">
 				</div>
 				<div class="content">
 					<h2>Desert quailinn</h2>
 					<span>Мотель</span>
 					<span>от 2000 р.</span>
-					<a class="button" href="#">Подробнее</a>
-					<button class="button" type="submit">Забронировать</button>
+                    <a class="button blue" href="#">Подробнее</a>
+					<a class="button brown" href="#">Забронировать</a>
 					<div class="rating">
 						<img src="" width="" height="" alt="rating">
 					</div>
@@ -123,13 +125,13 @@
 			</div>
 			<div class="search-result">
 				<div class="photo">
-					<img src="" width="" height="" alt="apartments">
+					<img src="img/apartments.jpg" width="" height="" alt="apartments">
 				</div>
 				<h2>Villas at poco diablo</h2>
 				<span>Апартаменты</span>
 				<span>от 4000 р.</span>
-				<a class="button" href="#">Подробнее</a>
-				<button class="button" type="submit">Забронировать</button>
+                <a class="button blue" href="#">Подробнее</a>
+                <a class="button brown" href="#">Забронировать</a>
 				<div class="rating">
 					<img src="" width="" height="" alt="rating">
 				</div>
@@ -142,14 +144,14 @@
 			<a href="#">#Visitsedona</a>
 		</div>
 		<div class="footer-social">
-			<a class="social-btn social-btn-tw">twitter</a>
-			<a class="social-btn social-btn-fb">facebook</a>
-			<a class="social-btn social-btn-youtube">youtube</a>
+			<a class="social-btn social-btn-tw" href="#">twitter</a>
+			<a class="social-btn social-btn-fb" href="#">facebook</a>
+			<a class="social-btn social-btn-youtube" href="#">youtube</a>
 		</div>
 		<div class="footer-copyright">
 			<a href="#">Website by</a>
 			<div class="footer-copyright-logo">
-				<img src="" width="" height="" alt="html academy">
+				<img src="img/html_academy.png" width="" height="" alt="html academy">
 			</div>
         </div>
 	</footer>
