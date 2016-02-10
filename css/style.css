@@ -1,19 +1,18 @@
 body {
-    font-family: PTSans;
+    font-family: "PTSans", "Arial", serif;
     font-size: 14px;
-    font-weight: Regular;
     line-height: 21px;
 }
 
 h2 {
-    font-family: PTSans;
+    font-family: "PTSans", "Arial", serif;
     font-size: 21px;
     font-weight: bold;
     line-height: 21px;
 }
 
 .promo-phrase b {
-    font-family: PTSans;
+    font-family: "PTSans", "Arial", serif;
     font-size: 21px;
     font-weight: bold;;
     line-height: 26px;
