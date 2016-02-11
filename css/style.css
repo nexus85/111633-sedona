@@ -1,19 +1,248 @@
 body {
-    font-family: "PTSans", "Arial", serif;
+    font-family: "PTSans", "Arial", sans-serif;
+    font-weight: 400;
     font-size: 14px;
     line-height: 21px;
+    text-transform: uppercase;
+    color: #000000;
+
+    background-color: #f2f2f2;
 }
 
-h2 {
-    font-family: "PTSans", "Arial", serif;
-    font-size: 21px;
+.container {
+    min-width: 768px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: #ffffff;
+}
+
+.main-header {
+    position: relative;
+    padding: 0 6%;
+    background-color: #ffffff;
+
+    color: #000000;
+}
+
+.main-header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-header .logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -69px;
+}
+
+main .main-navigation {
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+.main-navigation ul {
+    margin: 0;
+    padding: 0;
+
+    font-size: 0;
+    list-style: none;
+}
+
+.main-navigation li {
+    float: left;
+    width: 20%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    font-size: 14px;
     font-weight: bold;
-    line-height: 21px;
+    line-height: 26px;
+}
+
+.main-navigation li:nth-child(n+3) {
+    float: right;
+    text-align: right;
+}
+
+.main-navigation a {
+    color: #000000;
+
+    text-decoration: none;
+    text-align: left;
+}
+
+.main-photo-city {
+    position: relative;
+    width: 100%;
+    height: 510px;
+    padding-top: 75px;
+    margin-bottom: 60px;
+
+    background: #497ea8 url("../img/panoram.jpg") no-repeat center -57px;
+
+    text-align: center;
+}
+
+.pruning {
+    position: absolute;
+    top: 515px;
+    left: 0;
+    width: 100%;
+    height: 70px;
+
+    padding: 0;
+    margin-bottom: -57px;
+
+    vertical-align: bottom;
+}
+
+.promo-phrase {
+    text-align: center;
+    margin-bottom: 53px;
 }
 
 .promo-phrase b {
-    font-family: "PTSans", "Arial", serif;
     font-size: 21px;
-    font-weight: bold;;
+    font-weight: bold;
     line-height: 26px;
+
+    margin-bottom: 32px;
+}
+
+.promo-phrase p {
+    font-size: 14px;
+    font-weight: normal;;;
+    line-height: 26px;
+    color: #7d7d7d;
+}
+
+ul.content {
+    margin: 0;
+    padding: 0;
+
+    font-size: 0;
+    list-style: none;
+}
+
+.content li {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 33.33%;
+
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 21px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.content .content-box {
+    padding: 30px 5%;
+    height: 256px;
+
+    color: 656565;
+}
+
+.content .content-box h2 {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+}
+
+.content .content-bluebox {
+    color: #ffffff;
+
+    background-color: #81b3d2;
+}
+
+.content .content-whitebox {
+    background-color: #eeeeee;
+}
+
+.content .content-image {
+    width: 66.66%;
+    height: 256px;
+}
+
+.content .image1 {
+    background: #7d7d7d url("../img/content_image1.jpg") no-repeat center;
+}
+
+.content .image2 {
+    background: #7d7d7d url("../img/content_image2.jpg") no-repeat center;
+}
+
+.content .content-service {
+    height: 330px;
+    padding-top: 165px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.content li:nth-child(3) {
+    background: #ffffff url("../img/house.png") no-repeat center 60px;
+}
+
+.content li:nth-child(4) {
+    background: #ffffff url("../img/food.png") no-repeat center 60px;
+}
+
+.content li:nth-child(5) {
+    background: #ffffff url("../img/house.png") no-repeat center 60px;
+}
+
+
+
+.main-footer {
+    min-height: 60px;
+    margin-top: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    font-size: 0;
+    text-align: center;
+    vertical-align: top;
+}
+
+/*.main-footer::after {
+    content: "";
+    display: table;
+    clear: both;
+}*/
+
+.main-footer .footer-link {
+    display: inline-block;
+    width: 33.33%;
+    padding-top: 47px;
+    padding-bottom: 47px;
+
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    vertical-align: top;
+}
+
+.main-footer .footer-social {
+    display: inline-block;
+    width: 33.33%;
+
+    vertical-align: top;
+}
+
+.main-footer .footer-copyright {
+    display: inline-block;
+    width: 33.33%;
+
+    font-size: 14px;
+    font-weight: normal;;
+    line-height: 26px;
+    vertical-align: top;
+}
+
+.footer-copyright .footer-copyright-logo {
+
 }
