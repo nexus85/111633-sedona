@@ -177,24 +177,41 @@ ul.content {
 }
 
 .content .content-service {
+    position: relative;
     height: 330px;
     padding-top: 165px;
     padding-left: 8%;
     padding-right: 8%;
 }
 
-.content li:nth-child(3) {
-    background: #ffffff url("../img/house.png") no-repeat center 60px;
+.content .content-service::before {
+    content: "";
+    position: absolute;
+    top: 132px;
+    left: 50%;
+    transform: translate(-50%, -100%);
+
+    background-image: url("../img/sprite_service.png");
+    background-repeat: no-repeat;
 }
 
-.content li:nth-child(4) {
-    background: #ffffff url("../img/food.png") no-repeat center 60px;
+.content .house::before {
+    width: 75px;
+    height: 72px;
+    background-position: -5px -85px;
 }
 
-.content li:nth-child(5) {
-    background: #ffffff url("../img/house.png") no-repeat center 60px;
+.content .food::before {
+    width: 74px;
+    height: 70px;
+    background-position: -5px -5px;
 }
 
+.content .present::before {
+    width: 64px;
+    height: 76px;
+    background-position: -5px -167px;
+}
 
 
 .main-footer {
@@ -208,29 +225,70 @@ ul.content {
     vertical-align: top;
 }
 
-/*.main-footer::after {
-    content: "";
-    display: table;
-    clear: both;
-}*/
-
 .main-footer .footer-link {
     display: inline-block;
     width: 33.33%;
     padding-top: 47px;
     padding-bottom: 47px;
+}
 
+.main-footer .footer-link a {
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
     vertical-align: top;
+    color: #000000;
+    text-decoration: none;
 }
 
 .main-footer .footer-social {
     display: inline-block;
     width: 33.33%;
+    padding-top: 36px;
+    padding-bottom: 36px;
 
     vertical-align: top;
+}
+
+.social-btn {
+    display: inline-block;
+    position: relative;
+    width: 46px;
+    height: 48px;
+    margin:0 6px;
+
+    vertical-align: top;
+    text-decoration: none;
+
+    background: #81b3d2;
+}
+
+.social-btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-image: url("../img/sprite_social_icon.png");
+}
+
+.social-btn-tw::before {
+    width: 17px;
+    height: 15px;
+    background-position: -5px -34px;
+}
+
+.social-btn-fb::before {
+    width: 10px;
+    height: 19px;
+    background-position: -5px -5px;
+}
+
+.social-btn-youtube::before {
+    width: 20px;
+    height: 16px;
+    background-position: -5px -59px;
 }
 
 .main-footer .footer-copyright {
