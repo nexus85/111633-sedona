@@ -37,11 +37,12 @@ body {
     top: 0;
     left: 50%;
     margin-left: -69px;
+    z-index: 10;
 }
 
-main .main-navigation {
-    margin-left: 45px;
-    margin-right: 45px;
+ .main-navigation {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .main-navigation ul {
@@ -301,6 +302,20 @@ ul.content {
     vertical-align: top;
 }
 
-.footer-copyright .footer-copyright-logo {
+.main-footer .footer-copyright a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.main-footer .footer-copyright-logo {
+    display: inline-block;
+    padding-top: 41px;
+    padding-bottom: 40px;
+    margin-left: 5px;
+
+    vertical-align: middle;
+}
+
+.search-filters {
 
 }
