@@ -304,6 +304,7 @@ ul.content {
 }
 .search-filters {
   padding: 30px 6%;
+  margin-bottom: 20px;
   background-color: #4f7ea8;
   background-image: url("../img/panoram2.jpg");
   background-position: center;
@@ -318,7 +319,7 @@ ul.content {
   padding: 0;
   border: none;
 }
-fieldset legend {
+.search-filters legend {
   margin-bottom: 30px;
   font-size: 16px;
   font-weight: bold;
@@ -327,16 +328,16 @@ fieldset legend {
 }
 .search-filters .infrastructure {
   float: left;
-  width: 180px;
+  width: 20%;
 }
 .search-filters .property-type {
   float: left;
-  width: 180px;
-  margin-left: 50px;
+  width: 20%;
+  margin-left: 6%;
 }
 .search-filters .price {
   float: right;
-  width: 330px;
+  width: 28%;
 }
 .search-filters::after {
   content: "";
@@ -346,13 +347,15 @@ fieldset legend {
 .search-filters input[type="checkbox"] {
   display: none;
 }
-.search-filters label {
+.infrastructure label,
+.property-type label {
   display: block;
   position: relative;
   margin-bottom: 25px;
   padding-left: 30px;
 }
-.search-filters label::after {
+.infrastructure label::after,
+.property-type label::after {
   content: "";
   position: absolute;
   width: 22px;
@@ -363,19 +366,251 @@ fieldset legend {
   background-repeat: no-repeat;
   background-position: -10px -52px;
 }
-input[type="checkbox"]:checked + label::after {
+.infrastructure input[type="checkbox"]:checked + label::after,
+.property-type input[type="checkbox"]:checked + label::after {
   width: 26px;
   height: 22px;
   background-position: -10px -10px;
 }
+.price legend {
+  margin-bottom: 12px;
+}
+.install-price {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  font-size: 0;
+}
+.install-price::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 2px;
+  height: 22px;
+  background-color: #ffffff;
+}
+.install-price label {
+  display: inline-block;
+  width: 35%;
+  padding-left: 15%;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 38px;
+  cursor: pointer;
+}
+.install-price input {
+  width: 50%;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+.price .range {
+  position: relative;
+  margin-bottom: 32px;
+}
+.range .scale {
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.range .bar {
+  width: 80%;
+  height: 2px;
+  background-color: #ffffff;
+}
+.range-toggle {
+  position:absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background-color: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+.range-toggle:hover {
+  background-color: #1c4f80;
+}
+.range-toggle-from {
+  left: 0;
+}
+.range-toggle-to {
+  left: 80%;
+}
+.btn-form {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+.settings {
+  position: relative;
+  padding: 10px 6%;
+  margin-bottom: 10px;
+}
+.settings b {
+  position: absolute;
+  width: 150px;
+  top: 0;
+  left: 6%;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}
+.settings-fields {
+  margin-left: 165px;
+  margin-right: 40px;
+}
+.settings-fields-header {
+  display: inline-block;
+  margin-right: 40px;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 18px;
+  vertical-align: top;
+}
+.settings ul {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  list-style: none;
+  vertical-align: top;
+}
+.settings li {
+  display: inline-block;
+  margin-right: 30px;
+  vertical-align: top;
+}
+.settings li a {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 18px;
+  text-decoration: none;
+  color: #b2b2b2;
+}
+.sorting {
+  position: absolute;
+  width: 40px;
+  top: 0;
+  right: 6%;
+}
+.sorting-order {
+  display: inline-block;
+  vertical-align: middle;
+  width: 11px;
+  height: 10px;
+  font-size: 0;
+}
+.sorting .increase {
+  background-image: url("../img/sort_elem.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sorting .decrease {
+  margin-left: 12px;
+  background-image: url("../img/sort_elem_active.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .search-result {
-  width: 100%;
-  padding-left: 6%;
-  padding-right: 6%;
+  position: relative;
+  padding: 15px 6%;
+  border-top: 2px solid #e5e5e5;
+}
+.search-result:last-child {
+  border-bottom: 2px solid #e5e5e5;
 }
 .search-result .photo {
-  float: left;
+  position: absolute;
+  top: 15px;
 }
 .search-result .content-box {
   margin-left: 165px;
+  margin-right: 40px;
+  font-size: 0;
+}
+.content-box h2{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+.content-box-column1,
+.content-box-column2 {
+  display: inline-block;
+}
+.content-box-column1 {
+  margin-right: 6px;
+}
+.content-box-column1 span,
+.content-box-column2 span {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  text-align: left;
+}
+.content-box-column1 a,
+.content-box-column2 a {
+  display: block;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 21px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+.content-box-column1 a {
+  background-color: #81b3d2;
+}
+.content-box-column2 a {
+  background-color: #766357;
+}
+.search-result .stars {
+  position: absolute;
+  width: 89px;
+  height: 17px;
+  top: 15px;
+  right: 6%;
+  background-image: url("../img/sprite_stars.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+.search-result:first-child .stars {
+  width: 89px;
+  height: 17px;
+  background-position: -10px -10px;
+}
+.search-result:nth-child(2) .stars {
+  width: 42px;
+  height: 17px;
+  background-position: -10px -84px;
+}
+.search-result:last-child .stars {
+  width: 65px;
+  height: 17px;
+  background-position: -10px -47px;
+}
+.search-result .rating {
+  position: absolute;
+  bottom: 15px;
+  right: 6%;
 }

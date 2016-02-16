@@ -58,30 +58,39 @@
           <fieldset class="price">
             <legend>Стоимость в сутки (Р):</legend>
             <div class="install-price">
-              <input type="text" name="price-from" placeholder="От">
-              <input type="text" name="price-to" placeholder="До">
+              <label class="price-from">
+                от
+                <input type="text" name="price-from" value="0">
+              </label>
+              <label class="price-to">
+                до
+                <input type="text" name="price-to" value="3000">
+              </label>
             </div>
-            <button class="btn" type="submit">Показать</button>
+            <div class="range">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-from"></div>
+              <div class="range-toggle range-toggle-to"></div>
+            </div>
+            <button class="btn-form" type="submit">Показать</button>
           </fieldset>
         </form>
       </div>
       <div class="settings">
         <b>Найдено: 3</b>
-        <fieldset>
-          <legend>Сортировка:</legend>
+        <div class="settings-fields">
+          <span class="settings-fields-header">Сортировка:</span>
           <ul>
             <li class="active"><a href="#">по цене</a></li>
             <li><a href="#">по типу</a></li>
             <li><a href="#">по рейтингу</a></li>
           </ul>
-        </fieldset>
-        <div class="settings-sort">
-          <a class="settings-sort-increase" href="#">
-            <img src="" alt="increase">
-          </a>
-          <a class="settings-sort-decrease" href="#">
-            <img src="" alt="decrease">
-          </a>
+        </div>
+        <div class="sorting">
+          <div class="sorting-order increase"></div>
+          <div class="sorting-order decrease"></div>
         </div>
       </div>
       <div class="search-results">
@@ -91,15 +100,17 @@
           </div>
           <div class="content-box">
             <h2>Amara resort spa</h2>
-            <span>Гостиница</span>
-            <span>от 3500 р.</span>
-            <a class="btn-more" href="#">Подробнее</a>
-            <a class="btn-reserve" href="#">Забронировать</a>
-            <div class="rating">
-              <img src="" width="" height="" alt="rating">
+            <div class="content-box-column1">
+              <span>Гостиница</span>
+              <a class="btn-more" href="#">Подробнее</a>
             </div>
-            <div>Рейтинг: 8,5</div>
+            <div class="content-box-column2">
+              <span>от 3500 р.</span>
+              <a class="btn-reserve" href="#">Забронировать</a>
+            </div>
           </div>
+          <div class="stars"></div>
+          <div class="rating">Рейтинг: 8,5</div>
         </div>
         <div class="search-result">
           <div class="photo">
@@ -107,15 +118,17 @@
           </div>
           <div class="content-box">
             <h2>Desert quailinn</h2>
-            <span>Мотель</span>
-            <span>от 2000 р.</span>
-            <a class="btn-more" href="#">Подробнее</a>
-            <a class="btn-reserve" href="#">Забронировать</a>
-            <div class="rating">
-              <img src="" width="" height="" alt="rating">
+            <div class="content-box-column1">
+              <span>Мотель</span>
+              <a class="btn-more" href="#">Подробнее</a>
             </div>
-            <div>Рейтинг: 8,9</div>
+            <div class="content-box-column2">
+              <span>от 2000 р.</span>
+              <a class="btn-reserve" href="#">Забронировать</a>
+            </div>
           </div>
+          <div class="stars"></div>
+          <div class="rating">Рейтинг: 8,9</div>
         </div>
         <div class="search-result">
           <div class="photo">
@@ -123,15 +136,17 @@
           </div>
           <div class="content-box">
             <h2>Villas at poco diablo</h2>
-            <span>Апартаменты</span>
-            <span>от 4000 р.</span>
-            <a class="btn-more" href="#">Подробнее</a>
-            <a class="btn-reserve" href="#">Забронировать</a>
-            <div class="rating">
-              <img src="" width="" height="" alt="rating">
+            <div class="content-box-column1">
+              <span>Апартаменты</span>
+              <a class="btn-more" href="#">Подробнее</a>
             </div>
-            <div>Рейтинг: 9,2</div>
+            <div class="content-box-column2">
+              <span>от 4000 р.</span>
+              <a class="btn-reserve" href="#">Забронировать</a>
+            </div>
           </div>
+          <div class="stars"></div>
+          <div class="rating">Рейтинг: 9,2</div>
         </div>
       </div>
     </main>
