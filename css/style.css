@@ -224,18 +224,17 @@ ul.content {
   font-weight: normal;
   letter-spacing: -1px;
 }
-.form-header {
+.form-header a {
+  display: block;
   padding-top: 30px;
   padding-bottom: 30px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   color: #ffffff;
+  text-decoration: none;
   letter-spacing: -1px;
   background-color: #766357;
-}
-.form-header {
-  cursor: pointer;
 }
 .content-form-search {
   position: relative;
@@ -244,6 +243,7 @@ ul.content {
   box-shadow: 0 0 2px 2px #e1e0de;
 }
 .form-search {
+  display: none;
   position: absolute;
   padding: 55px 55px;
   background-color: #ffffff;
@@ -253,6 +253,9 @@ ul.content {
   color: #000000;
   text-align: left;
   z-index: 10;
+}
+.form-search-show {
+  display: block;
 }
 .form-search label {
   display: block;
@@ -447,25 +450,21 @@ ul.content {
 .search-filters input[type="checkbox"] {
   display: none;
 }
-.infrastructure label,
-.property-type label {
+.infrastructure label, .property-type label {
   display: block;
   position: relative;
   margin-bottom: 25px;
   padding-left: 38px;
   letter-spacing: -1px;
 }
-.infrastructure label:hover,
-.property-type label:hover {
+.infrastructure label:hover, .property-type label:hover {
   color: #ff0000;
   font-weight: bold;
 }
-.infrastructure input[type="checkbox"]:disabled + label::after,
-.property-type input[type="checkbox"]:disabled + label::after {
+.infrastructure input[type="checkbox"]:disabled + label::after, .property-type input[type="checkbox"]:disabled + label::after {
   opacity: 0.5;
 }
-.infrastructure label::after,
-.property-type label::after {
+.infrastructure label::after, .property-type label::after {
   content: "";
   position: absolute;
   width: 22px;
@@ -476,8 +475,7 @@ ul.content {
   background-repeat: no-repeat;
   background-position: -10px -52px;
 }
-.infrastructure input[type="checkbox"]:checked + label::after,
-.property-type input[type="checkbox"]:checked + label::after {
+.infrastructure input[type="checkbox"]:checked + label::after, .property-type input[type="checkbox"]:checked + label::after {
   width: 26px;
   height: 22px;
   background-position: -10px -10px;
@@ -535,7 +533,7 @@ ul.content {
   background-color: #ffffff;
 }
 .range-toggle {
-  position:absolute;
+  position: absolute;
   top: -9px;
   width: 4px;
   height: 4px;
@@ -669,7 +667,7 @@ ul.content {
   margin-right: 40px;
   font-size: 0;
 }
-.content-box h2{
+.content-box h2 {
   margin: 0;
   margin-top: 10px;
   margin-bottom: 5px;
@@ -682,15 +680,13 @@ ul.content {
 .content-box h2:hover {
   color: #81b3d2;
 }
-.content-box-column1,
-.content-box-column2 {
+.content-box-column1, .content-box-column2 {
   display: inline-block;
 }
 .content-box-column1 {
   margin-right: 6px;
 }
-.content-box-column1 span,
-.content-box-column2 span {
+.content-box-column1 span, .content-box-column2 span {
   display: block;
   margin-bottom: 15px;
   font-size: 14px;
@@ -700,8 +696,7 @@ ul.content {
   text-align: left;
   letter-spacing: -1px;
 }
-.content-box-column1 a,
-.content-box-column2 a {
+.content-box-column1 a, .content-box-column2 a {
   display: block;
   padding: 3px 15px;
   font-size: 14px;
@@ -716,7 +711,7 @@ ul.content {
   background-color: #81b3d2;
 }
 .content-box-column1 a:hover {
-  background-color: #669ec0 ;
+  background-color: #669ec0;
 }
 .content-box-column2 a {
   background-color: #766357;
