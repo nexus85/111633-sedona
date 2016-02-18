@@ -276,6 +276,15 @@ ul.content {
   line-height: inherit;
   font-weight: inherit;
   color: inherit;
+  z-index: 10;
+}
+.form-search input[name="arrival-date"] + img,
+.form-search input[name="departure-date"] + img {
+  position: absolute;
+  right: 9px;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 20;
 }
 .form-search .number-people {
   margin-bottom: 29px;
@@ -295,8 +304,22 @@ ul.content {
 }
 .form-search .number-people input {
   width: 38px;
-  padding-left: 38px;
   text-align: center;
+  padding-left: 38px;
+}
+.form-search .number-people img{
+  position: absolute;
+  z-index: 20;
+}
+.number-people .minus {
+  right: 89px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.number-people .plus {
+  right: 13px;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 .form-search .btn {
   display: block;
