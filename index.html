@@ -53,9 +53,7 @@
           <p>- №1 -</p>
           <p>Седона - не атракцион для туристов, там течет своя жизнь</p>
         </li>
-        <li class="content-image image1">
-          <!-- <img src="img/content_image1.jpg" width="100%" height="256" alt="image"> -->
-        </li>
+        <li class="content-image image1"></li>
         <li class="content-service house">
           <h2>Жилье</h2>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -68,9 +66,7 @@
           <h2>Сувениры</h2>
           <p>Не только китайского, но и местного производства!</p>
         </li>
-        <li class="content-image image2">
-          <!-- <img src="img/content_image2.jpg" width="100%" height="256 " alt="image"> -->
-        </li>
+        <li class="content-image image2"></li>
         <li class="content-box content-bluebox">
           <h2>
             Там есть<br>
@@ -111,26 +107,28 @@
           <br> и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
         <div class="content-form-search">
+          <div class="form-header">
+            Поиск гостиницы в Седоне
+          </div>
           <form class="form-search" action="#" method="post">
-            <div class="form-header">
-              Поиск гостиницы в Седоне
-            </div>
             <label>
               Дата заезда:
-              <input type="date" name="arrival-date">
+              <input type="text" name="arrival-date" value="24 апреля 2016">
             </label>
             <label>
               Дата выезда:
-              <input type="date" name="departure-date">
+              <input type="text" name="departure-date" value="4 июля 2016">
             </label>
-            <label>
-              Взрослые:
-              <input type="number" name="adults">
-            </label>
-            <label>
-              Дети:
-              <input type="number" name="children">
-            </label>
+            <div class="number-people">
+              <label>
+                Взрослые:
+                <input type="text" name="adults" value="2">
+              </label>
+              <label>
+                Дети:
+                <input type="text" name="children" value="0">
+              </label>
+            </div>
             <button class="btn" type="submit">Найти</button>
           </form>
         </div>
@@ -156,6 +154,7 @@
     </footer>
   </div>
   <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=zsmOG9vskERNRaSj7kgFB0DXhsBWB-5H&width=100%&height=475&lang=ru_UA&sourceType=constructor&id=yandex-map"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
