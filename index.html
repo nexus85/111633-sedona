@@ -35,7 +35,8 @@
     <main>
       <div class="main-photo-city">
         <img src="img/panoram_inscription.png" width="458" height="352" alt="SEDONA">
-        <img class="pruning" src="img/pruning.png" width="100%" height="70" alt="pruning">
+        <!-- <img class="pruning" src="img/pruning.png" width="1200" height="70" alt="pruning"> -->
+        <div class="pruning"></div>
       </div>
       <div class="promo-phrase">
         <b>
@@ -111,29 +112,29 @@
             <a href="#">Поиск гостиницы в Седоне</a>
           </div>
           <form class="form-search" action="#" method="post">
-            <label>
-              Дата заезда:
-              <input type="text" name="arrival-date" value="24 апреля 2016">
+            <div class="arrival-date">
+              <label for="arrival-date">Дата заезда:</label>
+              <input type="date" name="arrival-date" id="arrival-date" value="2016-04-24">
               <div class="calendar"></div>
-            </label>
-            <label>
-              Дата выезда:
-              <input type="text" name="departure-date" value="4 июля 2016">
+            </div>
+            <div class="departure-date">
+              <label for="departure-date">Дата выезда:</label>
+              <input type="date" name="departure-date" id="departure-date" value="2016-07-04">
               <div class="calendar"></div>
-            </label>
+            </div>
             <div class="number-people">
-              <label>
-                Взрослые:
-                <input type="text" name="adults" value="2">
+              <div class="adults">
+                <label for="adults">Взрослые:</label>
+                <input type="text" name="adults" id="adults" value="2">
                 <div class="minus"></div>
                 <div class="plus"></div>
-              </label>
-              <label>
-                Дети:
-                <input type="text" name="children" value="0">
+              </div>
+              <div class="children">
+                <label for="children">Дети:</label>
+                <input type="text" name="children" id="children" value="0">
                 <div class="minus"></div>
                 <div class="plus"></div>
-              </label>
+              </div>
             </div>
             <button class="btn" type="submit">Найти</button>
           </form>
@@ -159,7 +160,7 @@
       </div>
     </footer>
   </div>
-  <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=zsmOG9vskERNRaSj7kgFB0DXhsBWB-5H&width=100%&height=475&lang=ru_UA&sourceType=constructor&id=yandex-map"></script>
+  <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=zsmOG9vskERNRaSj7kgFB0DXhsBWB-5H&width=100%25&height=475&lang=ru_UA&sourceType=constructor&id=yandex-map"></script>
   <script src="js/script.js"></script>
 </body>
 
