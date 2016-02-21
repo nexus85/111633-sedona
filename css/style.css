@@ -1,5 +1,5 @@
 body {
-  font-family: "PTSans", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -13,6 +13,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: #ffffff;
+  box-shadow: 0 0 5px 0 #34495e;
 }
 .main-header {
   position: relative;
@@ -65,7 +66,6 @@ body {
   color: #000000;
   text-decoration: none;
   text-align: left;
-  letter-spacing: -1px;
 }
 .main-navigation a:hover {
   color: #81b3d2;
@@ -77,7 +77,6 @@ body {
   color: #766357;
   text-decoration: none;
   text-align: left;
-  letter-spacing: -1px;
 }
 .main-navigation .active span:hover {
   color: #604e43;
@@ -97,7 +96,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center 28%;
-  background-size: 100%, auto;
+  background-size: 100% auto;
   text-align: center;
 }
 .pruning {
@@ -120,14 +119,12 @@ body {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
-  letter-spacing: -1.5px;
 }
 .promo-phrase p {
   font-size: 14px;
   font-weight: normal;
   line-height: 26px;
   color: #7d7d7d;
-  letter-spacing: -1px;
 }
 ul.content {
   margin: 0;
@@ -145,10 +142,6 @@ ul.content {
   text-align: center;
   vertical-align: top;
 }
-.content li p {
-  letter-spacing: -1px;
-  word-spacing: 1px;
-}
 .content .content-box {
   padding: 30px 5%;
   min-height: 256px;
@@ -158,7 +151,6 @@ ul.content {
   font-size: 21px;
   font-weight: bold;
   line-height: 21px;
-  letter-spacing: -1px;
 }
 .content p {
   margin-top: 23px;
@@ -194,9 +186,6 @@ ul.content {
   padding-left: 6%;
   padding-right: 6%;
 }
-.content .content-service h2 {
-  letter-spacing: -1px;
-}
 .content .content-service::before {
   content: "";
   position: absolute;
@@ -231,7 +220,6 @@ ul.content {
   font-size: 30px;
   line-height: 39px;
   font-weight: bold;
-  letter-spacing: -3px;
 }
 .container-form-search p {
   margin-top: 21px;
@@ -239,7 +227,6 @@ ul.content {
   font-size: 14px;
   line-height: 24px;
   font-weight: normal;
-  letter-spacing: -1px;
 }
 .content-form-search {
   position: relative;
@@ -255,7 +242,6 @@ ul.content {
   font-weight: bold;
   color: #ffffff;
   text-decoration: none;
-  letter-spacing: -2px;
   background-color: #766357;
 }
 .form-search {
@@ -281,7 +267,6 @@ ul.content {
   position: relative;
   margin-bottom: 32px;
   line-height: 36px;
-  letter-spacing: -1px;
 }
 .form-search input {
   position: absolute;
@@ -334,7 +319,6 @@ ul.content {
   font-size: 14px;
   font-weight: bold;
   line-height: 36px;
-  letter-spacing: -1px;
 }
 .form-search .number-people .adults {
   width: 226px;
@@ -434,7 +418,6 @@ ul.content {
   vertical-align: middle;
   color: #000000;
   text-decoration: none;
-  letter-spacing: -1.5px;
 }
 .main-footer .footer-social {
   display: inline-block;
@@ -498,7 +481,6 @@ ul.content {
   margin-left: 14px;
   color: #000000;
   text-decoration: none;
-  letter-spacing: -1px;
 }
 .main-footer .footer-copyright-logo {
   display: inline-block;
@@ -540,7 +522,6 @@ ul.content {
   font-weight: bold;
   line-height: 21px;
   color: #ffffff;
-  letter-spacing: -1px;
 }
 .search-filters .infrastructure {
   float: left;
@@ -553,7 +534,7 @@ ul.content {
 }
 .search-filters .price {
   float: right;
-  width: 31%;
+  width: 30%;
 }
 .search-filters::after {
   content: "";
@@ -567,8 +548,7 @@ ul.content {
   display: block;
   position: relative;
   margin-bottom: 25px;
-  padding-left: 38px;
-  letter-spacing: -1px;
+  padding-left: 41px;
 }
 .infrastructure label:hover, .property-type label:hover {
   color: #ff0000;
@@ -616,8 +596,8 @@ ul.content {
 }
 .install-price label {
   display: inline-block;
-  width: 35%;
-  padding-left: 15%;
+  width: 28%;
+  padding-left: 20%;
   vertical-align: top;
   font-size: 14px;
   line-height: 28px;
@@ -668,7 +648,7 @@ ul.content {
 .btn-form {
   display: block;
   margin: 0 auto;
-  padding: 6px 30px;
+  padding: 6px 33px;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
@@ -696,7 +676,6 @@ ul.content {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
-  letter-spacing: -1px;
 }
 .settings-fields {
   margin-left: 165px;
@@ -704,7 +683,7 @@ ul.content {
 }
 .settings-fields-header {
   display: inline-block;
-  margin-right: 24px;
+  margin-right: 34px;
   font-size: 12px;
   font-weight: normal;
   line-height: 18px;
@@ -720,7 +699,7 @@ ul.content {
 }
 .settings li {
   display: inline-block;
-  margin-right: 27px;
+  margin-right: 33px;
   vertical-align: top;
 }
 .settings li a {
@@ -744,7 +723,7 @@ ul.content {
 }
 .sorting {
   position: absolute;
-  width: 40px;
+  width: 36px;
   top: 6px;
   right: 6%;
 }
@@ -767,7 +746,7 @@ ul.content {
   background-position: -10px -130px;
 }
 .sorting .decrease {
-  margin-left: 12px;
+  margin-left: 10px;
   background-position: -10px -70px;
 }
 .sorting .decrease:hover {
@@ -791,7 +770,6 @@ ul.content {
 }
 .search-result .content-field {
   margin-left: 165px;
-  margin-right: 40px;
   font-size: 0;
 }
 .content-field h2 {
@@ -802,7 +780,6 @@ ul.content {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
-  letter-spacing: -1.5px;
 }
 .content-field h2:hover {
   color: #81b3d2;
@@ -825,18 +802,16 @@ ul.content {
   line-height: 21px;
   color: #333333;
   text-align: left;
-  letter-spacing: -1px;
 }
 .content-field-column1 a, .content-field-column2 a {
   display: inline-block;
-  padding: 3px 15px;
+  padding: 3px 16px;
   font-size: 14px;
   font-weight: bold;
   line-height: 21px;
   color: #ffffff;
   text-decoration: none;
   text-align: center;
-  letter-spacing: -1px;
 }
 .content-field-column1 a {
   background-color: #81b3d2;
@@ -887,9 +862,8 @@ ul.content {
   position: absolute;
   bottom: 30px;
   right: 6%;
-  padding: 3px 15px;
+  padding: 3px 13px;
   color: #666666;
-  letter-spacing: -1.2px;
   background-color: #f2f2f2;
 }
 @keyframes form {
