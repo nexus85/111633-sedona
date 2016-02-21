@@ -57,10 +57,10 @@ body {
   text-align: right;
 }
 .main-navigation li:nth-child(2) {
-  padding-left: 28px;
+  padding-left: 2.7%;
 }
 .main-navigation li:last-child {
-  padding-right: 28px;
+  padding-right: 2.7%;
 }
 .main-navigation a {
   color: #000000;
@@ -151,6 +151,9 @@ ul.content {
   font-size: 21px;
   font-weight: bold;
   line-height: 21px;
+}
+.content .content-bluebox h2 {
+  margin-top: 6%;
 }
 .content p {
   margin-top: 23px;
@@ -260,7 +263,7 @@ ul.content {
 .form-search-show {
   display: block;
   animation-name: form;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 .form-search .arrival-date, .form-search .departure-date {
@@ -504,8 +507,9 @@ ul.content {
   margin-bottom: 28px;
   background-color: #4f7ea8;
   background-image: url("../img/panoram2.jpg");
-  background-position: center;
+  background-position: center 28%;
   background-repeat: no-repeat;
+  background-size: 100%;
   font-size: 14px;
   font-weight: normal;
   line-height: 21px;
@@ -869,7 +873,7 @@ ul.content {
 }
 @keyframes form {
   from {
-    bottom: 0;
+    bottom: 1000px;
   }
   to {
     bottom: -394px;
