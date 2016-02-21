@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -90,7 +90,7 @@
         </div>
         <div class="sorting">
           <div class="sorting-order increase"></div>
-          <div class="sorting-order decrease"></div>
+          <div class="sorting-order decrease decrease-selected"></div>
         </div>
       </div>
       <div class="search-results">
@@ -98,13 +98,13 @@
           <div class="photo">
             <img src="img/hotel.jpg" width="135" height="90" alt="hotel">
           </div>
-          <div class="content-box">
-            <h2>Amara resort spa</h2>
-            <div class="content-box-column1">
+          <div class="content-field">
+            <h2>Amara resort &amp; spa</h2>
+            <div class="content-field-column1">
               <span>Гостиница</span>
               <a class="btn-more" href="#">Подробнее</a>
             </div>
-            <div class="content-box-column2">
+            <div class="content-field-column2">
               <span>от 3500 р.</span>
               <a class="btn-reserve" href="#">Забронировать</a>
             </div>
@@ -116,13 +116,13 @@
           <div class="photo">
             <img src="img/motel.jpg" width="135" height="90" alt="motel">
           </div>
-          <div class="content-box">
+          <div class="content-field">
             <h2>Desert quail inn</h2>
-            <div class="content-box-column1">
+            <div class="content-field-column1">
               <span>Мотель</span>
               <a class="btn-more" href="#">Подробнее</a>
             </div>
-            <div class="content-box-column2">
+            <div class="content-field-column2">
               <span>от 2000 р.</span>
               <a class="btn-reserve" href="#">Забронировать</a>
             </div>
@@ -134,13 +134,13 @@
           <div class="photo">
             <img src="img/apartments.jpg" width="135" height="90" alt="apartments">
           </div>
-          <div class="content-box">
+          <div class="content-field">
             <h2>Villas at poco diablo</h2>
-            <div class="content-box-column1">
+            <div class="content-field-column1">
               <span>Апартаменты</span>
               <a class="btn-more" href="#">Подробнее</a>
             </div>
-            <div class="content-box-column2">
+            <div class="content-field-column2">
               <span>от 4000 р.</span>
               <a class="btn-reserve" href="#">Забронировать</a>
             </div>
@@ -160,10 +160,10 @@
         <a class="social-btn social-btn-youtube" href="#">youtube</a>
       </div>
       <div class="footer-copyright">
-        <a href="#">Website by</a>
-        <div class="footer-copyright-logo">
-          <img src="img/html_academy.png" width="113" height="39" alt="html academy">
-        </div>
+        <a href="#">
+          Website by
+          <div class="footer-copyright-logo"></div>
+        </a>
       </div>
     </footer>
   </div>
