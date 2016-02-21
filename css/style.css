@@ -70,6 +70,9 @@ body {
 .main-navigation a:hover {
   color: #81b3d2;
 }
+.main-navigation a:active {
+  color: #b2b2b2;
+}
 .main-navigation .active span {
   color: #766357;
   text-decoration: none;
@@ -78,6 +81,9 @@ body {
 }
 .main-navigation .active span:hover {
   color: #604e43;
+}
+.main-navigation .active span:active {
+  color: #d6d0cc;
 }
 .main-photo-city {
   position: relative;
@@ -90,8 +96,8 @@ body {
   background-image: url("../img/panoram.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center -82px;
-  /*background-size: 100% auto;*/
+  background-position: center 28%;
+  background-size: 100%, auto;
   text-align: center;
 }
 .pruning {
@@ -239,7 +245,6 @@ ul.content {
   position: relative;
   width: 568px;
   margin: 0 auto;
-  box-shadow: 0 0 2px 2px #e1e0de;
 }
 .form-header a {
   display: block;
@@ -268,15 +273,17 @@ ul.content {
 }
 .form-search-show {
   display: block;
+  animation-name: form;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
-.form-search .arrival-date,
-.form-search .departure-date {
+.form-search .arrival-date, .form-search .departure-date {
   position: relative;
   margin-bottom: 32px;
   line-height: 36px;
   letter-spacing: -1px;
 }
-.form-search  input {
+.form-search input {
   position: absolute;
   right: 0;
   width: 292px;
@@ -320,8 +327,7 @@ ul.content {
   margin-bottom: 55px;
   font-size: 0;
 }
-.form-search .number-people .adults,
-.form-search .number-people .children {
+.form-search .number-people .adults, .form-search .number-people .children {
   display: inline-block;
   position: relative;
   vertical-align: top;
@@ -345,8 +351,7 @@ ul.content {
   font-weight: inherit;
   line-height: inherit;
 }
-.form-search .number-people .minus,
-.form-search .number-people .plus {
+.form-search .number-people .minus, .form-search .number-people .plus {
   position: absolute;
   background-image: url("../img/sprite_plus_minus.png");
   background-repeat: no-repeat;
@@ -394,8 +399,8 @@ ul.content {
 .form-search .btn:hover {
   background-color: #669ec0;
 }
-.form-search .btn:down {
-  opacity: 0.5;
+.form-search .btn:active {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 .map {
@@ -422,10 +427,11 @@ ul.content {
   padding-bottom: 47px;
 }
 .main-footer .footer-link a {
+  margin-left: -10px;
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
-  vertical-align: top;
+  vertical-align: middle;
   color: #000000;
   text-decoration: none;
   letter-spacing: -1.5px;
@@ -449,6 +455,9 @@ ul.content {
 }
 .social-btn:hover {
   background: #669ec0;
+}
+.social-btn:active::before {
+  opacity: 0.3;
 }
 .social-btn::before {
   content: "";
@@ -479,18 +488,33 @@ ul.content {
   font-size: 14px;
   font-weight: normal;
   line-height: 26px;
-  vertical-align: top;
+  vertical-align: middle;
+}
+.main-footer .footer-copyright {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .main-footer .footer-copyright a {
+  margin-left: 14px;
   color: #000000;
   text-decoration: none;
+  letter-spacing: -1px;
 }
 .main-footer .footer-copyright-logo {
   display: inline-block;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin-left: 5px;
+  width: 113px;
+  height: 39px;
+  margin-left: 7px;
   vertical-align: middle;
+  background-image: url("../img/sprite_html_academy.png");
+  background-repeat: no-repeat;
+  background-position: -10px -10px;
+}
+.footer-copyright a:hover .footer-copyright-logo {
+  background-position: -10px -69px;
+}
+.footer-copyright a:active .footer-copyright-logo {
+  background-position: -10px -128px;
 }
 .search-filters {
   padding: 28px 6%;
@@ -710,6 +734,10 @@ ul.content {
 .settings li a:hover {
   color: #81b3d2;
 }
+.settings li a:active {
+  color: #000000;
+  border: none;
+}
 .settings .active a {
   color: #81b3d2;
   border: none;
@@ -725,18 +753,28 @@ ul.content {
   vertical-align: middle;
   width: 11px;
   height: 10px;
+  background-image: url("../img/sprite_sort_elem.png");
+  background-repeat: no-repeat;
   font-size: 0;
 }
 .sorting .increase {
-  background-image: url("../img/sort_elem.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-position: -10px -160px;
+}
+.sorting .increase:hover {
+  background-position: -10px -100px;
+}
+.sorting .increase:active, .sorting .increase-selected {
+  background-position: -10px -130px;
 }
 .sorting .decrease {
   margin-left: 12px;
-  background-image: url("../img/sort_elem_active.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-position: -10px -70px;
+}
+.sorting .decrease:hover {
+  background-position: -10px -10px;
+}
+.sorting .decrease:active, .sorting .decrease-selected {
+  background-position: -10px -40px;
 }
 .search-result {
   position: relative;
@@ -769,16 +807,17 @@ ul.content {
 .content-field h2:hover {
   color: #81b3d2;
 }
-.content-field-column1,
-.content-field-column2 {
+.content-field h2:active {
+  color: #b2b2b2;
+}
+.content-field-column1, .content-field-column2 {
   display: inline-block;
   width: 110px;
 }
 .content-field-column1 {
   margin-right: 6px;
 }
-.content-field-column1 span,
-.content-field-column2 span {
+.content-field-column1 span, .content-field-column2 span {
   display: block;
   margin-bottom: 15px;
   font-size: 14px;
@@ -788,8 +827,7 @@ ul.content {
   text-align: left;
   letter-spacing: -1px;
 }
-.content-field-column1 a,
- .content-field-column2 a {
+.content-field-column1 a, .content-field-column2 a {
   display: inline-block;
   padding: 3px 15px;
   font-size: 14px;
@@ -806,11 +844,19 @@ ul.content {
 .content-field-column1 a:hover {
   background-color: #669ec0;
 }
+.content-field-column1 a:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
 .content-field-column2 a {
   background-color: #766357;
 }
 .content-field-column2 a:hover {
   background-color: #604e43;
+}
+.content-field-column2 a:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
 }
 .search-result .stars {
   position: absolute;
@@ -845,4 +891,12 @@ ul.content {
   color: #666666;
   letter-spacing: -1.2px;
   background-color: #f2f2f2;
+}
+@keyframes form {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: -394px;
+  }
 }
