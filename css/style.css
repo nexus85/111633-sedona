@@ -265,9 +265,12 @@ ul.content {
 }
 .form-search-show {
   display: block;
-  animation-name: form;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: form;
+		  animation-name: form;
+  -webkit-animation-duration: 1s;
+		  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+		  animation-fill-mode: forwards;
 }
 .form-search .arrival-date, .form-search .departure-date {
   position: relative;
@@ -899,6 +902,15 @@ ul.content {
   color: #666666;
   background-color: #f2f2f2;
 }
+@-webkit-keyframes form {
+  from {
+    bottom: 1000px;
+  }
+  to {
+    bottom: -394px;
+  }
+  
+}
 @keyframes form {
   from {
     bottom: 1000px;
@@ -906,4 +918,5 @@ ul.content {
   to {
     bottom: -394px;
   }
+  
 }
