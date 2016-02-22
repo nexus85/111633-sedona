@@ -195,7 +195,9 @@ ul.content {
   position: absolute;
   top: 132px;
   left: 50%;
-  transform: translate(-50%, -100%);
+  -webkit-transform: translate(-50%, -100%);
+      -ms-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
   background-image: url("../img/sprite_service.png");
   background-repeat: no-repeat;
 }
@@ -300,7 +302,9 @@ ul.content {
   height: 22px;
   right: 9px;
   top: 50%;
-  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
   z-index: 20;
   background-image: url("../img/sprite_calendar.png");
   background-repeat: no-repeat;
@@ -350,7 +354,9 @@ ul.content {
   height: 11px;
   right: 89px;
   top: 50%;
-  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
   background-position: -10px -52px;
 }
 .number-people .minus:hover {
@@ -364,7 +370,9 @@ ul.content {
   height: 11px;
   right: 13px;
   top: 50%;
-  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
   background-position: -10px -141px;
 }
 .number-people .plus:hover {
@@ -452,7 +460,9 @@ ul.content {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   background-image: url("../img/sprite_social_icon.png");
 }
 .social-btn-tw::before {
@@ -599,7 +609,9 @@ ul.content {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   content: "";
   width: 2px;
   height: 22px;
