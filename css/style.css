@@ -259,14 +259,14 @@ ul.content {
   position: absolute;
   overflow: hidden;
   top: 0;
-  height: 480px;
+  height: 0;
   width: 100%;
   z-index: 20;
   background-color: transparent;
 }
 .form-search {
   position: absolute;
-  top: -394px;
+  bottom: 0;
   width: 458px;
   padding: 55px 55px;
   background-color: #ffffff;
@@ -925,9 +925,9 @@ ul.content {
 }
 @keyframes form {
   0% {
-    transform: translateY(0px);
+    height: 0;
   }
   100% {
-    transform: translateY(480px);
+    height: 480px;
   }
 }
