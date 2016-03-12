@@ -196,8 +196,8 @@ ul.content {
   top: 132px;
   left: 50%;
   -webkit-transform: translate(-50%, -100%);
-      -ms-transform: translate(-50%, -100%);
-          transform: translate(-50%, -100%);
+  -ms-transform: translate(-50%, -100%);
+  transform: translate(-50%, -100%);
   background-image: url("../img/sprite_service.png");
   background-repeat: no-repeat;
 }
@@ -221,6 +221,7 @@ ul.content {
   margin-top: 50px;
   text-align: center;
   background-color: #ffffff;
+  z-index: 20;
 }
 .container-form-search b {
   font-size: 30px;
@@ -239,6 +240,10 @@ ul.content {
   width: 568px;
   margin: 0 auto;
 }
+.form-header {
+  position: relative;
+  z-index: 50;
+}
 .form-header a {
   display: block;
   padding-top: 30px;
@@ -250,9 +255,18 @@ ul.content {
   text-decoration: none;
   background-color: #766357;
 }
-.form-search {
-  display: none;
+.wrapper-form {
   position: absolute;
+  overflow: hidden;
+  top: 0;
+  height: 0;
+  width: 100%;
+  z-index: 20;
+  background-color: transparent;
+}
+.form-search {
+  position: absolute;
+  bottom: 0;
   width: 458px;
   padding: 55px 55px;
   background-color: #ffffff;
@@ -264,13 +278,12 @@ ul.content {
   z-index: 10;
 }
 .form-search-show {
-  display: block;
   -webkit-animation-name: form;
-		  animation-name: form;
+  animation-name: form;
   -webkit-animation-duration: 1s;
-		  animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-		  animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 .form-search .arrival-date, .form-search .departure-date {
   position: relative;
@@ -306,8 +319,8 @@ ul.content {
   right: 9px;
   top: 50%;
   -webkit-transform: translate(0, -50%);
-      -ms-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
   z-index: 20;
   background-image: url("../img/sprite_calendar.png");
   background-repeat: no-repeat;
@@ -358,8 +371,8 @@ ul.content {
   right: 89px;
   top: 50%;
   -webkit-transform: translate(0, -50%);
-      -ms-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
   background-position: -10px -52px;
 }
 .number-people .minus:hover {
@@ -374,8 +387,8 @@ ul.content {
   right: 13px;
   top: 50%;
   -webkit-transform: translate(0, -50%);
-      -ms-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
   background-position: -10px -141px;
 }
 .number-people .plus:hover {
@@ -464,8 +477,8 @@ ul.content {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background-image: url("../img/sprite_social_icon.png");
 }
 .social-btn-tw::before {
@@ -613,8 +626,8 @@ ul.content {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   content: "";
   width: 2px;
   height: 22px;
@@ -909,14 +922,12 @@ ul.content {
   to {
     bottom: -394px;
   }
-  
 }
 @keyframes form {
-  from {
-    bottom: 1000px;
+  0% {
+    height: 0;
   }
-  to {
-    bottom: -394px;
+  100% {
+    height: 480px;
   }
-  
 }
